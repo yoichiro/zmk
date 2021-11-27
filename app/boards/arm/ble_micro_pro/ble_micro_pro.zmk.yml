@@ -1,0 +1,10 @@
+file_format: "1"
+id: ble_micro_pro
+name: BLE Micro Pro
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://github.com/sekigon-gonnoc/BLE-Micro-Pro
+exposes: [pro_micro]

@@ -1,0 +1,31 @@
+# Copyright (c) 2021 ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_BLE_MICRO_PRO
+
+config BOARD
+        default "ble_micro_pro"
+
+if USB
+
+config USB_NRFX
+        default y
+
+config USB_DEVICE_STACK
+        default y
+
+endif # USB
+
+config BT_CTLR
+        default BT
+
+config ZMK_BLE
+        default y
+
+config ZMK_USB
+        default y
+
+config ZMK_EXT_POWER
+        default n
+
+endif # BOARD_BLE_MICRO_PRO
